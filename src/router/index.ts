@@ -9,6 +9,7 @@ import 'nprogress/nprogress.css'
 import NotFoundView from '@/views/NotFoundView.vue'
 import NetworkErrorView from '../views/NetworkErrorView.vue'
 import StudentService from '@/services/StudentService'
+import { useEventStore } from '@/stores/event'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -47,7 +48,7 @@ const router = createRouter({
       beforeEnter: (to) => {
         const id: number = parseInt(to.params.id as string)
         const eventStore = useEventStore()
-        return StudentService.getEventById(id)
+        return StudentService.getStudentById(id)
           .then((response) => {
             // need to set up the data for the component
             eventStore.setEvent(response.data)
