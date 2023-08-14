@@ -6,6 +6,7 @@ import TeacherView from '../views/TeacherView.vue'
 import StudentAdvisorView from '../views/StudentAdvisorView.vue'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
+import NotFoundView from '@/views/NotFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,6 +20,17 @@ const router = createRouter({
       path: '/teacher',
       name: 'teacher',
       component: TeacherView
+    },
+    {
+      path: '/404/:resource',
+      name: '404-resource',
+      component: NotFoundView,
+      props: true
+    },
+    {
+      path: '/:catchAll(.*)',
+      name: 'not-found',
+      component: NotFoundView
     },
     {
       path: '/student/:id',
@@ -51,6 +63,5 @@ router.beforeEach(() => {
 router.afterEach(() => {
   NProgress.done()
 })
-
 
 export default router
