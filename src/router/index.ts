@@ -7,7 +7,6 @@ import StudentAdvisorView from '../views/StudentAdvisorView.vue'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import NotFoundView from '@/views/NotFoundView.vue'
-import StudentService from '@/services/StudentService'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, defineProps } from 'vue'
+import { ref, type PropType } from 'vue'
 import { type StudentDetail } from '@/type'
 
 const StudentDetail = ref({})
