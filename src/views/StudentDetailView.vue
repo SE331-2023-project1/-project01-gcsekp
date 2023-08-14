@@ -15,10 +15,10 @@ defineProps({
 <template>
   <div>
     <div v-if="student">
-      <p><span class="font-bold">First Name :</span> {{ student.firstName }}</p>
-      <p><span class="font-bold">Last Name :</span> {{ student.lastName }}</p>
-      <p><span class="font-bold">Student ID :</span> {{ student.studentID }}</p>
-      <p><span class="font-bold mb-10">Registered on :</span> {{ student.registeredCourses }}</p>
+      <p><span class="font-bold">First Name :</span> {{ student.FirstName }}</p>
+      <p><span class="font-bold">Last Name :</span> {{ student.LastName }}</p>
+      <p><span class="font-bold">Student ID :</span> {{ student.Student_ID }}</p>
+      <p><span class="font-bold mb-10">Registered on :</span> {{ student.registered }}</p>
     </div>
   </div>
 </template>

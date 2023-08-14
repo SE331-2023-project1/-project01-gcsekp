@@ -1,9 +1,9 @@
 export interface StudentDetail {
   id: number
-  firstName: string
-  lastName: string
-  studentID: string
-  registeredCourses: string
+  FirstName: string
+  LastName: string
+  Student_ID: string
+  registered: string
   advisor: number
   stu_pic: string
 }

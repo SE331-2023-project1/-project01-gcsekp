@@ -10,7 +10,7 @@ const student = ref<StudentDetail | null>(null)
 const router = useRouter()
 const store = useEventStore()
 const props = defineProps({
-  id: String
+  id: Number
 })
 
 StudentService.getStudentById(Number(props.id))
@@ -31,7 +31,7 @@ StudentService.getStudentById(Number(props.id))
   <div>
     <div v-if="student">
       <h1 class="text-2xl font-bold -mt-10 mb-5">
-        {{ `${student.firstName} ${student.lastName}` }}
+        {{ `${student.FirstName} ${student.LastName}` }}
       </h1>
       <img class="mb-5" :src="student.stu_pic" alt="img" />
       <hr class="mb-5" />
