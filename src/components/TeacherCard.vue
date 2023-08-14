@@ -17,12 +17,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref, defineProps } from 'vue'
-import { TeacherDetail } from '@/type'
+import { ref, type PropType } from 'vue'
+import { type TeacherDetail } from '@/type'
 
+const TeacherDetail = ref({})
 const props = defineProps({
   advisor: {
-    type: Object as () => TeacherDetail,
+    type: Object as PropType<TeacherDetail>,
     required: true
   }
 })
