@@ -1,0 +1,184 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "studentID": "S12345",
+      "registeredCourses": ["Math", "Science", "History", "English"],
+      "advisor": "Dr. Smith",
+      "stu_pic": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+      "id": 2,
+      "firstName": "Bob",
+      "lastName": "Williams",
+      "studentID": "S23456",
+      "registeredCourses": ["Science", "History", "Art", "Music"],
+      "advisor": "Dr. Johnson",
+      "stu_pic": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Carol",
+      "lastName": "Brown",
+      "studentID": "S34567",
+      "registeredCourses": ["History", "Biology", "Psychology", "Economics"],
+      "advisor": "Dr. Martinez",
+      "stu_pic": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+      "id": 4,
+      "firstName": "David",
+      "lastName": "Smith",
+      "studentID": "S45678",
+      "registeredCourses": ["English", "Computer Science", "Math", "Chemistry"],
+      "advisor": "Dr. Johnson",
+      "stu_pic": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    {
+      "id": 5,
+      "firstName": "Emily",
+      "lastName": "Jones",
+      "studentID": "S56789",
+      "registeredCourses": ["Physics", "Biology", "Chemistry", "Math"],
+      "advisor": "Dr. Martinez",
+      "stu_pic": "https://randomuser.me/api/portraits/women/5.jpg"
+    },
+    {
+      "id": 6,
+      "firstName": "Frank",
+      "lastName": "Davis",
+      "studentID": "S67890",
+      "registeredCourses": ["Chemistry", "Physics", "Math", "Biology"],
+      "advisor": "Dr. Smith",
+      "stu_pic": "https://randomuser.me/api/portraits/men/6.jpg"
+    },
+    {
+      "id": 7,
+      "firstName": "Grace",
+      "lastName": "Miller",
+      "studentID": "S78901",
+      "registeredCourses": ["Biology", "Math", "English", "History"],
+      "advisor": "Dr. Martinez",
+      "stu_pic": "https://randomuser.me/api/portraits/women/7.jpg"
+    },
+    {
+      "id": 8,
+      "firstName": "Henry",
+      "lastName": "Wilson",
+      "studentID": "S89012",
+      "registeredCourses": ["Math", "Physics", "Chemistry", "Computer Science"],
+      "advisor": "Dr. Johnson",
+      "stu_pic": "https://randomuser.me/api/portraits/men/8.jpg"
+    },
+    {
+      "id": 9,
+      "firstName": "Isabella",
+      "lastName": "Lee",
+      "studentID": "S90123",
+      "registeredCourses": ["Art", "Music", "English", "History"],
+      "advisor": "Dr. Smith",
+      "stu_pic": "https://randomuser.me/api/portraits/women/9.jpg"
+    },
+    {
+      "id": 10,
+      "firstName": "Jack",
+      "lastName": "Taylor",
+      "studentID": "S01234",
+      "registeredCourses": ["Music", "Computer Science", "Math", "Physics"],
+      "advisor": "Dr. Johnson",
+      "stu_pic": "https://randomuser.me/api/portraits/men/10.jpg"
+    },
+    {
+      "id": 11,
+      "firstName": "Katherine",
+      "lastName": "Anderson",
+      "studentID": "S12346",
+      "registeredCourses": ["Psychology", "Economics", "Biology", "Math"],
+      "advisor": "Dr. Martinez",
+      "stu_pic": "https://randomuser.me/api/portraits/women/11.jpg"
+    },
+    {
+      "id": 12,
+      "firstName": "Liam",
+      "lastName": "Harris",
+      "studentID": "S23457",
+      "registeredCourses": ["Economics", "Art", "Chemistry", "Music"],
+      "advisor": "Dr. Smith",
+      "stu_pic": "https://randomuser.me/api/portraits/men/12.jpg"
+    },
+    {
+      "id": 13,
+      "firstName": "Mia",
+      "lastName": "Martin",
+      "studentID": "S34568",
+      "registeredCourses": ["Physics", "History", "Math", "English"],
+      "advisor": "Dr. Johnson",
+      "stu_pic": "https://randomuser.me/api/portraits/women/13.jpg"
+    },
+    {
+      "id": 14,
+      "firstName": "Noah",
+      "lastName": "Brown",
+      "studentID": "S45679",
+      "registeredCourses": ["Math", "Computer Science", "Biology", "Physics"],
+      "advisor": "Dr. Martinez",
+      "stu_pic": "https://randomuser.me/api/portraits/men/14.jpg"
+    },
+    {
+      "id": 15,
+      "firstName": "Olivia",
+      "lastName": "Davis",
+      "studentID": "S56790",
+      "registeredCourses": ["Biology", "Chemistry", "Art", "Economics"],
+      "advisor": "Dr. Smith",
+      "stu_pic": "https://randomuser.me/api/portraits/women/15.jpg"
+    },
+    {
+      "id": 16,
+      "firstName": "Peter",
+      "lastName": "Wilson",
+      "studentID": "S67891",
+      "registeredCourses": ["Chemistry", "History", "Physics", "Psychology"],
+      "advisor": "Dr. Johnson",
+      "stu_pic": "https://randomuser.me/api/portraits/men/16.jpg"
+    },
+    {
+      "id": 17,
+      "firstName": "Quinn",
+      "lastName": "Miller",
+      "studentID": "S78902",
+      "registeredCourses": ["History", "Economics", "English", "Music"],
+      "advisor": "Dr. Martinez",
+      "stu_pic": "https://randomuser.me/api/portraits/women/17.jpg"
+    },
+    {
+      "id": 18,
+      "firstName": "Ryan",
+      "lastName": "Lee",
+      "studentID": "S89013",
+      "registeredCourses": ["Economics", "Computer Science", "Chemistry", "Art"],
+      "advisor": "Dr. Smith",
+      "stu_pic": "https://randomuser.me/api/portraits/men/18.jpg"
+    },
+    {
+      "id": 19,
+      "firstName": "Sophia",
+      "lastName": "Johnson",
+      "studentID": "S90124",
+      "registeredCourses": ["English", "Music", "Psychology", "Biology"],
+      "advisor": "Dr. Johnson",
+      "stu_pic": "https://randomuser.me/api/portraits/women/19.jpg"
+    },
+    {
+      "id": 20,
+      "firstName": "Thomas",
+      "lastName": "Smith",
+      "studentID": "S01235",
+      "registeredCourses": ["Computer Science", "Math", "Physics", "Chemistry"],
+      "advisor": "Dr. Martinez",
+      "stu_pic": "https://randomuser.me/api/portraits/men/20.jpg"
+    }
+  ]
+}
