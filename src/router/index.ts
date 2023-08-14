@@ -9,7 +9,6 @@ import 'nprogress/nprogress.css'
 import NotFoundView from '@/views/NotFoundView.vue'
 import NetworkErrorView from '../views/NetworkErrorView.vue'
 import StudentService from '@/services/StudentService'
-import { useEventStore } from '@/stores/event'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

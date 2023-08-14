@@ -4,13 +4,12 @@ import type { StudentDetail } from '@/type'
 import { ref, type PropType } from 'vue'
 import StudentService from '@/services/StudentService'
 import { useRouter } from 'vue-router'
-import { useEventStore } from '@/stores/event'
 
 const student = ref<StudentDetail | null>(null)
 const router = useRouter()
-const store = useEventStore()
+
 const props = defineProps({
-  id: Number
+  id: String
 })
 
 StudentService.getStudentById(Number(props.id))
