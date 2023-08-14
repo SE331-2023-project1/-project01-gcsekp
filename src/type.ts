@@ -3,7 +3,7 @@ export interface StudentDetail {
   firstName: string
   lastName: string
   studentID: string
-  registeredCourse: string
+  registeredCourses: string
   advisor: number
-  studentPicture: string
+  stu_pic: string
 }
