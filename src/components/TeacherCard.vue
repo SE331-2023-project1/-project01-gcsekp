@@ -20,7 +20,6 @@
       <p class="text-blue-950">Lastname:{{ advisor.LastName }}</p>
       <p class="text-gray-400">Department:{{ advisor.Department }}</p>
       <p class="text-blue-950">Email:{{ advisor.Email }}</p>
-      <p class="text-gray-400">Office:{{ advisor.Office }}</p>
     </div>
   </RouterLink>
 </template>

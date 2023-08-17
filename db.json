@@ -184,163 +184,163 @@
   "advisor": [
     {
       "id": 101,
-      "firstName": "Dr. Michael",
-      "lastName": "Brown",
-      "department": "Physics",
-      "email": "michael.brown@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/men/21.jpg"
+      "FirstName": "Dr. Michael",
+      "LastName": "Brown",
+      "Department": "Physics",
+      "Email": "michael.brown@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/men/21.jpg"
     },
     {
       "id": 102,
-      "firstName": "Dr. Jennifer",
-      "lastName": "Miller",
-      "department": "Biology",
+      "FirstName": "Dr. Jennifer",
+      "LastName": "Miller",
+      "Department": "Biology",
       "email": "jennifer.miller@university.edu",
       "advisor_pic": "https://randomuser.me/api/portraits/women/22.jpg"
     },
     {
       "id": 103,
-      "firstName": "Dr. William",
-      "lastName": "Davis",
-      "department": "Math",
-      "email": "william.davis@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/men/23.jpg"
+      "FirstName": "Dr. William",
+      "LastName": "Davis",
+      "Department": "Math",
+      "Email": "william.davis@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/men/23.jpg"
     },
     {
       "id": 104,
-      "firstName": "Dr. Jessica",
-      "lastName": "Smith",
-      "department": "Chemistry",
-      "email": "jessica.smith@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/women/24.jpg"
+      "FirstName": "Dr. Jessica",
+      "LastName": "Smith",
+      "Department": "Chemistry",
+      "Email": "jessica.smith@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/women/24.jpg"
     },
     {
       "id": 105,
-      "firstName": "Dr. David",
-      "lastName": "Johnson",
-      "department": "Computer Science",
-      "email": "david.johnson@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/men/25.jpg"
+      "FirstName": "Dr. David",
+      "LastName": "Johnson",
+      "Department": "Computer Science",
+      "Email": "david.johnson@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/men/25.jpg"
     },
     {
       "id": 106,
-      "firstName": "Dr. Emily",
-      "lastName": "Wilson",
-      "department": "Psychology",
-      "email": "emily.wilson@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/women/26.jpg"
+      "FirstName": "Dr. Emily",
+      "LastName": "Wilson",
+      "Department": "Psychology",
+      "Email": "emily.wilson@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/women/26.jpg"
     },
     {
       "id": 107,
-      "firstName": "Dr. Daniel",
-      "lastName": "Anderson",
-      "department": "Economics",
-      "email": "daniel.anderson@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/men/27.jpg"
+      "FirstName": "Dr. Daniel",
+      "LastName": "Anderson",
+      "Department": "Economics",
+      "Email": "daniel.anderson@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/men/27.jpg"
     },
     {
       "id": 108,
-      "firstName": "Dr. Olivia",
-      "lastName": "Martinez",
-      "department": "History",
-      "email": "olivia.martinez@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/women/28.jpg"
+      "FirstName": "Dr. Olivia",
+      "LastName": "Martinez",
+      "Department": "History",
+      "Email": "olivia.martinez@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/women/28.jpg"
     },
     {
       "id": 109,
-      "firstName": "Dr. Robert",
-      "lastName": "Johnson",
-      "department": "Chemistry",
-      "email": "robert.johnson@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/men/39.jpg"
+      "FirstName": "Dr. Robert",
+      "LastName": "Johnson",
+      "Department": "Chemistry",
+      "Email": "robert.johnson@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/men/39.jpg"
     },
     {
       "id": 110,
-      "firstName": "Dr. Sophia",
-      "lastName": "Lee",
-      "department": "Art",
-      "email": "sophia.lee@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/women/30.jpg"
+      "FirstName": "Dr. Sophia",
+      "LastName": "Lee",
+      "Department": "Art",
+      "Email": "sophia.lee@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/women/30.jpg"
     },
     {
       "id": 111,
-      "firstName": "Dr. James",
-      "lastName": "Taylor",
-      "department": "Music",
+      "FirstName": "Dr. James",
+      "LastName": "Taylor",
+      "Department": "Music",
       "email": "james.taylor@university.edu",
       "advisor_pic": "https://randomuser.me/api/portraits/men/31.jpg"
     },
     {
       "id": 112,
-      "firstName": "Dr. Lily",
-      "lastName": "Harris",
-      "department": "Psychology",
-      "email": "lily.harris@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/women/32.jpg"
+      "FirstName": "Dr. Lily",
+      "LastName": "Harris",
+      "Department": "Psychology",
+      "Email": "lily.harris@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/women/32.jpg"
     },
     {
       "id": 113,
-      "firstName": "Dr. Benjamin",
-      "lastName": "Martin",
-      "department": "Biology",
-      "email": "benjamin.martin@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/men/33.jpg"
+      "FirstName": "Dr. Benjamin",
+      "LastName": "Martin",
+      "Department": "Biology",
+      "Email": "benjamin.martin@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/men/33.jpg"
     },
     {
       "id": 114,
-      "firstName": "Dr. Ava",
-      "lastName": "Smith",
-      "department": "Math",
-      "email": "ava.smith@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/women/34.jpg"
+      "FirstName": "Dr. Ava",
+      "LastName": "Smith",
+      "Department": "Math",
+      "Email": "ava.smith@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/women/34.jpg"
     },
     {
       "id": 115,
-      "firstName": "Dr. Noah",
-      "lastName": "Williams",
+      "FirstName": "Dr. Noah",
+      "LastName": "Williams",
       "department": "Physics",
       "email": "noah.williams@university.edu",
       "advisor_pic": "https://randomuser.me/api/portraits/men/35.jpg"
     },
     {
       "id": 116,
-      "firstName": "Dr. Mia",
-      "lastName": "Johnson",
+      "FirstName": "Dr. Mia",
+      "LastName": "Johnson",
       "department": "Chemistry",
       "email": "mia.johnson@university.edu",
       "advisor_pic": "https://randomuser.me/api/portraits/women/36.jpg"
     },
     {
       "id": 117,
-      "firstName": "Dr. Ethan",
-      "lastName": "Miller",
-      "department": "Computer Science",
-      "email": "ethan.miller@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/men/37.jpg"
+      "FirstName": "Dr. Ethan",
+      "LastName": "Miller",
+      "Department": "Computer Science",
+      "Email": "ethan.miller@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/men/37.jpg"
     },
     {
       "id": 118,
-      "firstName": "Dr. Ava",
-      "lastName": "Smith",
-      "department": "Psychology",
-      "email": "ava.smith@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/women/38.jpg"
+      "FirstName": "Dr. Ava",
+      "LastName": "Smith",
+      "Department": "Psychology",
+      "Email": "ava.smith@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/women/38.jpg"
     },
     {
       "id": 119,
-      "firstName": "Dr. Samuel",
-      "lastName": "Brown",
-      "department": "Economics",
-      "email": "samuel.brown@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/men/39.jpg"
+      "FirstName": "Dr. Samuel",
+      "LastName": "Brown",
+      "Department": "Economics",
+      "Email": "samuel.brown@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/men/39.jpg"
     },
     {
       "id": 120,
-      "firstName": "Dr. Chloe",
-      "lastName": "Davis",
-      "department": "History",
-      "email": "chloe.davis@university.edu",
-      "advisor_pic": "https://randomuser.me/api/portraits/women/40.jpg"
+      "FirstName": "Dr. Chloe",
+      "LastName": "Davis",
+      "Department": "History",
+      "Email": "chloe.davis@university.edu",
+      "Advisor_pic": "https://randomuser.me/api/portraits/women/40.jpg"
     }
   ]
 }
