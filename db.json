@@ -1,49 +1,184 @@
 {
   "student": [
     {
-      "id": 21,
-      "FirstName": "Grace",
-      "LastName": "Martin",
-      "Student_ID": "STID-1021",
-      "registered": "English Literature, Art, French, Geography, Psychology",
+      "id": 1,
+      "FirstName": "John",
+      "LastName": "Doe",
+      "Student_ID": "STID-1001",
+      "registered": "Mathematics, Physics, Chemistry, Biology, Computer Science",
       "advisor": 101,
-      "stu_pic": "https://randomuser.me/api/portraits/men/21.jpg"
+      "stu_pic": "https://randomuser.me/api/portraits/men/1.jpg"
     },
     {
-      "id": 22,
-      "FirstName": "Oliver",
-      "LastName": "Martinez",
-      "Student_ID": "STID-1022",
-      "registered": "Biology, Physics, Spanish, Chemistry, Physical Education",
+      "id": 2,
+      "FirstName": "Jane",
+      "LastName": "Smith",
+      "Student_ID": "STID-1002",
+      "registered": "English Literature, History, Geography, Psychology, Spanish",
       "advisor": 102,
-      "stu_pic": "https://randomuser.me/api/portraits/women/22.jpg"
+      "stu_pic": "https://randomuser.me/api/portraits/women/2.jpg"
     },
     {
-      "id": 23,
-      "FirstName": "Lily",
-      "LastName": "Robinson",
-      "Student_ID": "STID-1023",
-      "registered": "Geography, Economics, Physical Education, Music, Computer Science",
+      "id": 3,
+      "FirstName": "Michael",
+      "LastName": "Johnson",
+      "Student_ID": "STID-1003",
+      "registered": "Physics, Chemistry, Biology, Mathematics, Computer Science",
       "advisor": 103,
-      "stu_pic": "https://randomuser.me/api/portraits/women/23.jpg"
+      "stu_pic": "https://randomuser.me/api/portraits/men/3.jpg"
     },
     {
-      "id": 24,
-      "FirstName": "William ",
-      "LastName": "Davis",
-      "Student_ID": "STID-1024",
-      "registered": "History, Psychology, Computer Science, Chemistry, Biology",
+      "id": 4,
+      "FirstName": "Emily",
+      "LastName": "Williams",
+      "Student_ID": "STID-1004",
+      "registered": "Art, Music, English Literature, History, Geography",
       "advisor": 104,
-      "stu_pic": "https://randomuser.me/api/portraits/women/24.jpg"
+      "stu_pic": "https://randomuser.me/api/portraits/women/4.jpg"
     },
     {
-      "id": 25,
-      "FirstName": "Chloe",
-      "LastName": "Adams",
-      "Student_ID": "STID-1025",
-      "registered": "Chemistry, Music, English, Mathematics, Spanish",
+      "id": 5,
+      "FirstName": "Daniel",
+      "LastName": "Brown",
+      "Student_ID": "STID-1005",
+      "registered": "Chemistry, Biology, Physics, Mathematics, Computer Science",
       "advisor": 105,
-      "stu_pic": "https://randomuser.me/api/portraits/women/25.jpg"
+      "stu_pic": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+      "id": 6,
+      "FirstName": "Olivia",
+      "LastName": "Jones",
+      "Student_ID": "STID-1006",
+      "registered": "Geography, History, English Literature, Psychology, Spanish",
+      "advisor": 101,
+      "stu_pic": "https://randomuser.me/api/portraits/women/6.jpg"
+    },
+    {
+      "id": 7,
+      "FirstName": "William",
+      "LastName": "Miller",
+      "Student_ID": "STID-1007",
+      "registered": "Biology, Chemistry, Physics, Mathematics, Computer Science",
+      "advisor": 102,
+      "stu_pic": "https://randomuser.me/api/portraits/men/7.jpg"
+    },
+    {
+      "id": 8,
+      "FirstName": "Ava",
+      "LastName": "Davis",
+      "Student_ID": "STID-1008",
+      "registered": "Music, Art, English Literature, History, Geography",
+      "advisor": 103,
+      "stu_pic": "https://randomuser.me/api/portraits/women/8.jpg"
+    },
+    {
+      "id": 9,
+      "FirstName": "James",
+      "LastName": "Rodriguez",
+      "Student_ID": "STID-1009",
+      "registered": "Physics, Mathematics, Chemistry, Biology, Computer Science",
+      "advisor": 104,
+      "stu_pic": "https://randomuser.me/api/portraits/men/9.jpg"
+    },
+    {
+      "id": 10,
+      "FirstName": "Isabella",
+      "LastName": "Garcia",
+      "Student_ID": "STID-1010",
+      "registered": "Psychology, Geography, History, English Literature, Spanish",
+      "advisor": 105,
+      "stu_pic": "https://randomuser.me/api/portraits/women/10.jpg"
+    },
+    {
+      "id": 11,
+      "FirstName": "Liam",
+      "LastName": "Martinez",
+      "Student_ID": "STID-1011",
+      "registered": "Chemistry, Physics, Mathematics, Biology, Computer Science",
+      "advisor": 106,
+      "stu_pic": "https://randomuser.me/api/portraits/men/11.jpg"
+    },
+    {
+      "id": 12,
+      "FirstName": "Sophia",
+      "LastName": "Brown",
+      "Student_ID": "STID-1012",
+      "registered": "History, Geography, English Literature, Music, Art",
+      "advisor": 107,
+      "stu_pic": "https://randomuser.me/api/portraits/women/12.jpg"
+    },
+    {
+      "id": 13,
+      "FirstName": "Benjamin",
+      "LastName": "Lopez",
+      "Student_ID": "STID-1013",
+      "registered": "Biology, Chemistry, Physics, Mathematics, Computer Science",
+      "advisor": 108,
+      "stu_pic": "https://randomuser.me/api/portraits/men/13.jpg"
+    },
+    {
+      "id": 14,
+      "FirstName": "Emma",
+      "LastName": "Harris",
+      "Student_ID": "STID-1014",
+      "registered": "Geography, History, English Literature, Psychology, Spanish",
+      "advisor": 109,
+      "stu_pic": "https://randomuser.me/api/portraits/women/14.jpg"
+    },
+    {
+      "id": 15,
+      "FirstName": "Mason",
+      "LastName": "Gonzalez",
+      "Student_ID": "STID-1015",
+      "registered": "Music, Art, Chemistry, Biology, Physics",
+      "advisor": 110,
+      "stu_pic": "https://randomuser.me/api/portraits/men/15.jpg"
+    },
+    {
+      "id": 16,
+      "FirstName": "Ava",
+      "LastName": "Perez",
+      "Student_ID": "STID-1016",
+      "registered": "English Literature, History, Geography, Psychology, Spanish",
+      "advisor": 101,
+      "stu_pic": "https://randomuser.me/api/portraits/women/16.jpg"
+    },
+    {
+      "id": 17,
+      "FirstName": "Noah",
+      "LastName": "Rodriguez",
+      "Student_ID": "STID-1017",
+      "registered": "Physics, Chemistry, Biology, Mathematics, Computer Science",
+      "advisor": 102,
+      "stu_pic": "https://randomuser.me/api/portraits/men/17.jpg"
+    },
+    {
+      "id": 18,
+      "FirstName": "Olivia",
+      "LastName": "Smith",
+      "Student_ID": "STID-1018",
+      "registered": "Art, Music, English Literature, History, Geography",
+      "advisor": 103,
+      "stu_pic": "https://randomuser.me/api/portraits/women/18.jpg"
+    },
+    {
+      "id": 19,
+      "FirstName": "Liam",
+      "LastName": "Johnson",
+      "Student_ID": "STID-1019",
+      "registered": "Chemistry, Biology, Physics, Mathematics, Computer Science",
+      "advisor": 104,
+      "stu_pic": "https://randomuser.me/api/portraits/men/19.jpg"
+    },
+    {
+      "id": 20,
+      "FirstName": "Sophia",
+      "LastName": "Miller",
+      "Student_ID": "STID-1020",
+      "registered": "Psychology, Geography, History, English Literature, Spanish",
+      "advisor": 105,
+      "stu_pic": "https://randomuser.me/api/portraits/women/20.jpg"
     }
   ],
   "advisor": [
