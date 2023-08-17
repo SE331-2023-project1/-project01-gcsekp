@@ -29,9 +29,6 @@ StudentService.getStudentById(Number(props.id))
 <template>
   <div>
     <div v-if="student">
-      <h1 class="text-2xl font-bold -mt-10 mb-5">
-        {{ `${student.FirstName} ${student.LastName}` }}
-      </h1>
       <img class="mb-5" :src="student.stu_pic" alt="img" />
       <hr class="mb-5" />
       <div id="nav">
