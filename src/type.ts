@@ -13,5 +13,5 @@ export interface TeacherDetail {
   LastName: string
   Department: string
   Email: string
-  advisor_pic: string
+  Advisor_pic: string
 }

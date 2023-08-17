@@ -2,13 +2,13 @@
   <!-- Wrap the card in a RouterLink to make it clickable -->
   <RouterLink
     :to="{ name: 'student-advisor', params: { id: advisor.id } }"
-    class="TeacherCard-container border-2 border-blue-950 rounded-lg shadow-lg m-5 bg-white hover:bg-blue-50 cursor-pointer flex items-center px-6 py-4"
+    class="TeacherCard-container w-full border-2 border-blue-950 rounded-lg shadow-lg m-5 bg-white hover:bg-blue-50 cursor-pointer flex items-center px-6 py-4"
   >
     <!-- Profile Picture Section -->
     <div class="TeacherCard-profile">
       <!-- Apply circular border to the profile picture -->
       <img
-        :src="advisor.advisor_pic"
+        :src="advisor.Advisor_pic"
         alt="Teacher Profile"
         class="rounded-full h-16 w-16 border-2 border-blue-950"
       />
