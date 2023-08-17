@@ -1,5 +1,5 @@
 {
-  "students": [
+  "student": [
     {
       "id": 21,
       "FirstName": "Grace",
@@ -46,7 +46,7 @@
       "stu_pic": "https://randomuser.me/api/portraits/women/25.jpg"
     }
   ],
-  "professors": [
+  "advisor": [
     {
       "id": 101,
       "firstName": "Dr. Michael",
