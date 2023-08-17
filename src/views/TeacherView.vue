@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import TeacherCard from '@/components/TeacherCard.vue'
-import TeacherService from '@/services/TeacherService'
+import TeacherCard from '../components/TeacherCard.vue'
+import AdvisorService from '@/services/AdvisorService'
 import type { TeacherDetail } from '@/type'
 import { ref, computed } from 'vue'
 import type { Ref } from 'vue'
@@ -9,7 +9,7 @@ const advisors: Ref<Array<TeacherDetail>> = ref([])
 const itemsPerPage = 5
 const currentPage = ref(1)
 
-TeacherService.getTeacher()
+AdvisorService.getTeacher()
   .then((response) => {
     advisors.value = response.data
   })

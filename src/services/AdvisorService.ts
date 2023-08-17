@@ -11,10 +11,10 @@ const apiClient: AxiosInstance = axios.create({
   }
 })
 export default {
-  getAdvisor(): Promise<AxiosResponse<TeacherDetail[]>> {
+  getTeacher(): Promise<AxiosResponse<TeacherDetail[]>> {
     return apiClient.get<TeacherDetail[]>('/advisor')
   },
-  getAdvisorById(id: number): Promise<AxiosResponse<TeacherDetail>> {
+  getTeacherById(id: number): Promise<AxiosResponse<TeacherDetail>> {
     return apiClient.get<TeacherDetail>('advisor/' + id.toString())
   }
 }

@@ -1,14 +1,28 @@
 <template>
-  <div
-    class="border-2 border-slate-600 w20-h20 rounded-lg shadow-lg m-5 bg-white px-10 py-8 text-slate-800 text-base font-mono hover:bg-slate-300 cursor-pointer"
+  <!-- Wrap the card in a RouterLink to make it clickable -->
+  <RouterLink
+    :to="{ name: 'student-advisor', params: { id: advisor.id } }"
+    class="TeacherCard-container border-2 border-blue-950 rounded-lg shadow-lg m-5 bg-white hover:bg-blue-50 cursor-pointer flex items-center px-6 py-4"
   >
-    <span> First Name: {{ advisor.FirstName }}</span>
-    <p>Last Name: {{ advisor.LastName }}</p>
-    <p>Department: {{ advisor.Department }}</p>
-    <p>Email: {{ advisor.Email }}</p>
-    <p>Office: {{ advisor.Office }}</p>
-    <img :src="advisor.advisor_pic" alt="img" />
-  </div>
+    <!-- Profile Picture Section -->
+    <div class="TeacherCard-profile">
+      <!-- Apply circular border to the profile picture -->
+      <img
+        :src="advisor.advisor_pic"
+        alt="Teacher Profile"
+        class="rounded-full h-16 w-16 border-2 border-blue-950"
+      />
+    </div>
+    <!-- Teacher Information Section -->
+    <div class="TeacherCard-info ml-4">
+      <!-- Display the first name in bold -->
+      <p class="text-blue-950 font-bold">Firstname:{{ advisor.FirstName }}</p>
+      <p class="text-blue-950">Lastname:{{ advisor.LastName }}</p>
+      <p class="text-gray-400">Department:{{ advisor.Department }}</p>
+      <p class="text-blue-950">Email:{{ advisor.Email }}</p>
+      <p class="text-gray-400">Office:{{ advisor.Office }}</p>
+    </div>
+  </RouterLink>
 </template>
 
 <script setup lang="ts">
@@ -25,17 +39,30 @@ const props = defineProps({
 </script>
 
 <style scoped>
-.advisorDetail-class {
-  padding: 20px;
-  width: 250px;
-  cursor: pointer;
-  border: 1px solid #39495c;
-  margin-top: 20px;
-  margin-bottom: 18px;
+.TeacherCard-container:hover {
+  background-color: rgb(70, 90, 100);
+}
+.TeacherCard-container {
+  transition: background-color 0.2s;
+  background-color: rgb(97, 103, 122);
+  color: white;
+  align-items: center;
+  margin: 20px 0;
+  border-radius: 5px;
 }
 
-.advisorDetail-class:hover {
-  transform: scale(1.01);
-  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
+/* Profile picture section styling */
+.TeacherCard-profile {
+  /* Prevent the profile picture from shrinking */
+  flex-shrink: 0;
+}
+img {
+  border-radius: 550px;
+}
+.flex {
+  display: flex;
+}
+.TeacherCard-info {
+  margin-left: 20px; /* Adjust this value to control the space */
 }
 </style>

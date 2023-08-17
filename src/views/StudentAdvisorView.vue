@@ -2,7 +2,7 @@
 import type { Ref } from 'vue'
 import type { TeacherDetail } from '@/type'
 import { ref, type PropType } from 'vue'
-import StudentService from '@/services/StudentService'
+import AdvisorService from '@/services/AdvisorService'
 
 const advisor = ref<TeacherDetail | null>(null)
 
