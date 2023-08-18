@@ -5,7 +5,7 @@ import { ref, type PropType } from 'vue'
 import AdvisorService from '@/services/AdvisorService' 
 
 defineProps({
-  student: {
+  advisor: {
     type: Object as PropType<TeacherDetail>,
     require: true
   }

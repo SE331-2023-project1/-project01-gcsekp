@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Ref } from 'vue'
-import type { StudentDetail } from '@/type'
+import type { TeacherDetail } from '@/type'
 import { ref, type PropType } from 'vue'
 import AdvisorService from '@/services/AdvisorService'
 import { useRouter } from 'vue-router'
@@ -12,7 +12,7 @@ const props = defineProps({
   id: String
 })
 
-AdvisorService.getStudentById(Number(props.id))
+AdvisorService.getAdvisorById(Number(props.id))
   .then((response) => {
     advisor.value = response.data
   })
@@ -29,16 +29,16 @@ AdvisorService.getStudentById(Number(props.id))
 <template>
   <div>
     <div v-if="advisor">
-      <img class="mb-5" :src="student.stu_pic" alt="img" />
+      <img class="mb-5" :src="advisor.advi_pic" alt="img" />
       <hr class="mb-5" />
       <div id="nav">
         <RouterLink
           class="w-1/2 mr-3 text-green-500 py-2 rounded text-center"
-          :to="{ name: 'student-detail', params: { id } }"
+          :to="{ name: 'advisor-detail', params: { id } }"
           >Details</RouterLink
         >
       </div>
     </div>
-    <RouterView class="mt-3" :student="student"></RouterView>
+    <RouterView class="mt-3" :advisor="advisor"></RouterView>
   </div>
 </template>
