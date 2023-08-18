@@ -7,6 +7,8 @@ import StudentAdvisorView from '../views/StudentAdvisorView.vue'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import NotFoundView from '@/views/NotFoundView.vue'
+import TeacherDetailView from '@/views/TeacherDetailView.vue'
+import TeacherLayoutView from '@/views/TeacherLayoutView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -49,6 +51,20 @@ const router = createRouter({
           path: 'advisor',
           name: 'student-advisor',
           component: StudentAdvisorView,
+          props: true
+        }
+      ]
+    },
+    {
+      path: '/teacher/:id',
+      name: 'advisor-detail',
+      component: TeacherLayoutView,
+      props: true,
+      children: [
+        {
+          path: '',
+          name: 'advisor-detail',
+          component: TeacherDetailView,
           props: true
         }
       ]
