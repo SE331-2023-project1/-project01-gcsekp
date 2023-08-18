@@ -37,45 +37,6 @@ const props = defineProps({
 })
 </script>
 
-<!-- <style scoped>
-.TeacherCard-container:hover {
-  background-color: rgb(70, 90, 100);
-}
-.TeacherCard-container {
-  transition: background-color 0.2s;
-  background-color: rgb(97, 103, 122);
-  align-items: center;
-  border-radius: 5px;
-  margin: 20px auto;
-  width: auto;
-  display: flex;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Profile picture section styling */
-.TeacherCard-profile {
-  /* Prevent the profile picture from shrinking */
-  width: 100vh;
-  flex-shrink: 0;
-}
-img {
-  border-radius: 550px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-}
-
-.TeacherCard-info {
-  margin-left: 20px; /* Adjust this value to control the space */
-}
-
-.TeacherCard-info p {
-  margin: 5px 0;
-}
-</style> -->
-
 <style scoped>
 .TeacherCard-container {
   display: flex;
@@ -100,15 +61,29 @@ img {
   border: 0.5px solid none;
 }
 
-.TeacherCard-info {
-  flex: 1;
-}
-
 .text-blue-950 {
   color: #3490dc;
 }
 
 .text-gray-400 {
   color: #718096;
+}
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .TeacherCard-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: none;
+  }
+
+  .TeacherCard-profile {
+    margin-bottom: 0;
+  }
+
+  .TeacherCard-info {
+    text-align: left;
+    flex: 1;
+  }
 }
 </style>

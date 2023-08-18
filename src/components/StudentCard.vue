@@ -37,40 +37,55 @@ const props = defineProps({
 </script>
 
 <style scoped>
-/* Container styling */
 .StudentCard-container {
-  transition: background-color 0.2s;
-  background-color: rgb(97, 103, 122);
-  align-items: center;
-  border-radius: 5px;
-  margin: 20px auto;
-  width: auto;
   display: flex;
-  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+  width: 100vh; /* Full width */
+  padding: 10px;
+  margin: 10px;
   background-color: white;
+  border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect */
-.StudentCard-container:hover {
-  background-color: rgb(70, 90, 100);
+.StudentCard-profile {
+  flex: none;
+  margin-bottom: 20px;
 }
 
-/* Profile picture section styling */
-.StudentCard-profile {
-  width: 100vh;
-  flex-shrink: 0;
+.StudentCard-profile img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  border: 0.5px solid none;
 }
-img {
-  border-radius: 208px;
-  background:
-    url(<path-to-image>),
-    lightgray 50% / cover no-repeat;
+
+.text-blue-950 {
+  color: #3490dc;
 }
-.flex {
-  display: flex;
+
+.text-gray-400 {
+  color: #718096;
 }
-.StudentCard-info {
-  margin-left: 20px;
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .StudentCard-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: none;
+  }
+
+  .StudentCard-profile {
+    margin-bottom: 0;
+  }
+
+  .StudentCard-info {
+    text-align: left;
+    flex: 1;
+    margin-left: 20px;
+  }
 }
 </style>
