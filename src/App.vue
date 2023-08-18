@@ -2,7 +2,7 @@
   <div class="main-container">
     <header>
       <div class="wrapper">
-        <nav class="font-mono text-yellow-300">
+        <nav class="font-mono text-yellow-300" id="menu">
           <RouterLink to="/">Student</RouterLink> |
           <RouterLink to="/teacher">Advisor</RouterLink>
         </nav>
@@ -24,7 +24,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-
+  background-color: white;
   padding: 10px 0;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
@@ -63,5 +63,9 @@ nav a:hover {
     font-size: 1rem;
     text-align: left;
   }
+}
+#menu {
+  display: flex;
+  align-items: center;
 }
 </style>

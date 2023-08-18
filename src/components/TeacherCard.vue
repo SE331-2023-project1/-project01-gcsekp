@@ -2,7 +2,7 @@
   <!-- Wrap the card in a RouterLink to make it clickable -->
   <RouterLink
     :to="{ name: 'student-advisor', params: { id: advisor.id } }"
-    class="TeacherCard-container w-full border-2 border-blue-950 rounded-lg shadow-lg m-5 bg-white hover:bg-blue-50 cursor-pointer flex items-center px-6 py-4"
+    class="TeacherCard-container"
   >
     <!-- Profile Picture Section -->
     <div class="TeacherCard-profile">
@@ -37,31 +37,78 @@ const props = defineProps({
 })
 </script>
 
-<style scoped>
+<!-- <style scoped>
 .TeacherCard-container:hover {
   background-color: rgb(70, 90, 100);
 }
 .TeacherCard-container {
   transition: background-color 0.2s;
   background-color: rgb(97, 103, 122);
-  color: white;
   align-items: center;
-  margin: 20px 0;
   border-radius: 5px;
+  margin: 20px auto;
+  width: auto;
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Profile picture section styling */
 .TeacherCard-profile {
   /* Prevent the profile picture from shrinking */
+  width: 100vh;
   flex-shrink: 0;
 }
 img {
   border-radius: 550px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
-.flex {
-  display: flex;
-}
+
 .TeacherCard-info {
   margin-left: 20px; /* Adjust this value to control the space */
+}
+
+.TeacherCard-info p {
+  margin: 5px 0;
+}
+</style> -->
+
+<style scoped>
+.TeacherCard-container {
+  display: flex;
+  align-items: center;
+  width: 100vh; /* Adjust the width as needed */
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.TeacherCard-profile {
+  flex: none;
+  margin-right: 20px;
+}
+
+.TeacherCard-profile img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  border: 0.5px solid none;
+}
+
+.TeacherCard-info {
+  flex: 1;
+}
+
+.text-blue-950 {
+  color: #3490dc;
+}
+
+.text-gray-400 {
+  color: #718096;
 }
 </style>

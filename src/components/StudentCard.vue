@@ -41,10 +41,14 @@ const props = defineProps({
 .StudentCard-container {
   transition: background-color 0.2s;
   background-color: rgb(97, 103, 122);
-  color: white;
   align-items: center;
-  margin: 20px 0;
   border-radius: 5px;
+  margin: 20px auto;
+  width: auto;
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Hover effect */
@@ -54,16 +58,19 @@ const props = defineProps({
 
 /* Profile picture section styling */
 .StudentCard-profile {
-  /* Prevent the profile picture from shrinking */
+  width: 100vh;
   flex-shrink: 0;
 }
 img {
-  border-radius: 550px;
+  border-radius: 208px;
+  background:
+    url(<path-to-image>),
+    lightgray 50% / cover no-repeat;
 }
 .flex {
   display: flex;
 }
 .StudentCard-info {
-  margin-left: 20px; /* Adjust this value to control the space */
+  margin-left: 20px;
 }
 </style>
