@@ -8,8 +8,14 @@ defineProps({
   student: {
     type: Object as PropType<StudentDetail>,
     require: true
+  },
+  reviews: {
+    type: Array,
+    required: true,
   }
+
 })
+
 </script>
 
 <template>
@@ -21,4 +27,19 @@ defineProps({
       <p><span class="font-bold mb-10">Registered on :</span> {{ student.registered }}</p>
     </div>
   </div>
+  <div class="review-container">
+        <h3>Reviews:</h3>
+            <ul>
+                <li v-for="(review, index) in reviews" :key="index">
+                    {{ review.name}} gave this {{ review.rating}} stars
+                    <br/>
+                    "{{ review.review }}"
+                    <br/>
+                    Answer:
+                    <br/>
+                    "{{ review.rec }}"
+                </li>
+            </ul>
+    </div>
+
 </template>
