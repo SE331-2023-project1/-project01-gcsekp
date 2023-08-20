@@ -1,29 +1,33 @@
 <script setup lang="ts">
-import type { Ref } from 'vue'
-import type { TeacherDetail } from '@/type'
-import { ref, type PropType } from 'vue'
+import type { Ref, onMounted } from 'vue'
+import type { TeacherDetail, Review } from '@/type'
+// import { ref, type PropType } from 'vue'
+// import TeacherService from '@/services/TeacherService'
+import { ref, defineProps } from 'vue'
 import TeacherService from '@/services/TeacherService'
-import { useRouter } from 'vue-router'
+// import { useRouter } from 'vue-router'
 
 const teacher = ref<TeacherDetail | null>(null)
-const router = useRouter()
+const reviews = ref<Review[]>([]) // Initialize the reviews array
 
 const props = defineProps({
   id: String
 })
 
-TeacherService.getTeacherById(Number(props.id))
-  .then((response) => {
-    teacher.value = response.data
-  })
-  .catch((error) => {
-    console.log(error)
-    if (error.response && error.response.status === 404) {
-      router.push({ name: '404-resource', params: { resource: 'teacher' } })
-    } else {
-      router.push({ name: 'network-error' })
-    }
-  })
+onMounted(async () => {
+  try {
+    // Fetch teacher details
+    const teacherResponse = await TeacherService.getTeacherById(Number(props.id))
+    teacher.value = teacherResponse.data
+
+    // Fetch teacher reviews
+    const reviewsResponse = await TeacherService.getTeacherReviews(Number(props.id))
+    reviews.value = reviewsResponse.data
+  } catch (error) {
+    console.error(error)
+    // Handle error here
+  }
+})
 </script>
 
 <template>
@@ -38,7 +42,10 @@ TeacherService.getTeacherById(Number(props.id))
           >Details</RouterLink
         >
       </div>
+      <TeacherDetailView :teacher="teacher" :reviews="reviews" />
     </div>
-    <RouterView class="mt-3" :teacher="teacher"></RouterView>
+    <div class="mt-3">
+      <RouterView :teacher="teacher" />
+    </div>
   </div>
 </template>

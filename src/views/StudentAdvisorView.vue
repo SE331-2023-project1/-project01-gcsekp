@@ -2,9 +2,9 @@
 import type { Ref } from 'vue'
 import type { TeacherDetail } from '@/type'
 import { ref, type PropType } from 'vue'
-import AdvisorService from '@/services/AdvisorService'
+import TeacherService from '@/services/TeacherService'
 
-const advisor = ref<TeacherDetail | null>(null)
+const teacher = ref<TeacherDetail | null>(null)
 
 defineProps({
   advisor: {

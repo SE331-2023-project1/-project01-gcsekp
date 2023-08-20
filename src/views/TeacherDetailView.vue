@@ -1,16 +1,19 @@
 <script setup lang="ts">
 import type { Ref } from 'vue'
-import type { TeacherDetail } from '@/type'
+import type { TeacherDetail, Review } from '@/type'
 import { ref, type PropType } from 'vue'
+// import TeacherService from '@/services/TeacherService'
+import { defineProps } from 'vue'
 import TeacherService from '@/services/TeacherService'
+import TeacherComment from '@/components/TeacherComment.vue'
 
-defineProps({
+const { teacher, reviews } = defineProps({
   teacher: {
     type: Object as PropType<TeacherDetail>,
-    require: true
+    required: true
   },
   reviews: {
-    type: Array,
+    type: Array as PropType<Review[]>,
     required: true
   }
 })
@@ -24,19 +27,6 @@ defineProps({
       <p><span class="font-bold">Department :</span> {{ teacher.Department }}</p>
       <p><span class="font-bold mb-10">Email :</span> {{ teacher.Email }}</p>
     </div>
-  </div>
-  <div class="review-container">
-    <h3>Comments:</h3>
-    <ul>
-      <li v-for="(review, index) in reviews" :key="index">
-        {{ review.name }} gave this {{ review.rating }} stars
-        <br />
-        "{{ review.review }}"
-        <br />
-        Answer:
-        <br />
-        "{{ review.rec }}"
-      </li>
-    </ul>
+    <TeacherComment :initialComments="reviews.map((review) => review.review)" />
   </div>
 </template>
