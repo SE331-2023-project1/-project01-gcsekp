@@ -3,7 +3,7 @@ import TeacherCard from '../components/TeacherCard.vue'
 import AdvisorService from '@/services/AdvisorService'
 import type { TeacherDetail } from '@/type'
 import { ref, computed } from 'vue'
-import type { Ref } from 'vue'
+import type { Ref, ComputedRef } from 'vue'
 
 const advisors: Ref<Array<TeacherDetail>> = ref([])
 const itemsPerPage = 5
@@ -29,7 +29,11 @@ const prevPage = () => {
   }
 }
 
-const displayedadvisors = computed(() => {
+// const displayedadvisors = computed(() => {
+//   const startIndex = (currentPage.value - 1) * itemsPerPage
+//   const endIndex = startIndex + itemsPerPage
+//   return advisors.value.slice(startIndex, endIndex)
+const displayedadvisors: ComputedRef<Array<TeacherDetail>> = computed(() => {
   const startIndex = (currentPage.value - 1) * itemsPerPage
   const endIndex = startIndex + itemsPerPage
   return advisors.value.slice(startIndex, endIndex)

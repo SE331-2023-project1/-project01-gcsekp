@@ -24,7 +24,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: white;
+  /* background-color: white; */
   padding: 10px 0;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
