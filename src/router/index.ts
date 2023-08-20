@@ -65,12 +65,7 @@ const router = createRouter({
           path: '',
           name: 'teacher-detail',
           component: TeacherDetailView,
-          // props: true
-          // Define the 'props' function to include the 'reviews' prop
-          props: (route) => ({
-            teacher: 'teacher' /* TeacherDetail data */,
-            reviews: 'reviews' /* Reviews data (if available) */
-          })
+          props: true
         }
       ]
     }
