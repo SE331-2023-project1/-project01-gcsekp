@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { Ref } from 'vue'
 import type { TeacherDetail } from '@/type'
-import { ref, type PropType } from 'vue'
+// import { ref, type PropType } from 'vue'
+import { ref, defineProps, onMounted } from 'vue'
 import AdvisorService from '@/services/AdvisorService'
 import { useRouter } from 'vue-router'
 
@@ -12,18 +13,31 @@ const props = defineProps({
   id: String
 })
 
-AdvisorService.getTeacherById(Number(props.id))
-  .then((response) => {
+// AdvisorService.getTeacherById(Number(props.id))
+//   .then((response) => {
+//     advisor.value = response.data
+//   })
+//   .catch((error) => {
+//     console.log(error)
+//     if (error.response && error.response.status === 404) {
+//       router.push({ name: '404-resource', params: { resource: 'advisor' } })
+//     } else {
+//       router.push({ name: 'network-error' })
+//     }
+//   })
+onMounted(async () => {
+  try {
+    const response = await AdvisorService.getTeacherById(Number(props.id))
     advisor.value = response.data
-  })
-  .catch((error) => {
-    console.log(error)
+  } catch (error) {
+    console.error(error)
     if (error.response && error.response.status === 404) {
       router.push({ name: '404-resource', params: { resource: 'advisor' } })
     } else {
       router.push({ name: 'network-error' })
     }
-  })
+  }
+})
 </script>
 
 <template>
