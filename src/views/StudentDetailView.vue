@@ -22,21 +22,7 @@ defineProps({
       <p><span class="font-bold">First Name :</span> {{ student.FirstName }}</p>
       <p><span class="font-bold">Last Name :</span> {{ student.LastName }}</p>
       <p><span class="font-bold">Student ID :</span> {{ student.Student_ID }}</p>
-      <p><span class="font-bold mb-10">Registered on :</span> {{ student.registered }}</p>
+      <p><span class="font-bold mb-10">Registered Courses :</span> {{ student.registered }}</p>
     </div>
-  </div>
-  <div class="review-container">
-    <h3>Reviews:</h3>
-    <ul>
-      <li v-for="(review, index) in reviews" :key="index">
-        {{ review.name }} gave this {{ review.rating }} stars
-        <br />
-        "{{ review.review }}"
-        <br />
-        Answer:
-        <br />
-        "{{ review.rec }}"
-      </li>
-    </ul>
   </div>
 </template>

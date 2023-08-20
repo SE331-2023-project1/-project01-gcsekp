@@ -18,7 +18,6 @@ defineProps({
 
 <template>
   <div>
-    <p>Teacher Detail Information</p>
     <div v-if="teacher">
       <p><span class="font-bold">First Name :</span> {{ teacher.FirstName }}</p>
       <p><span class="font-bold">Last Name :</span> {{ teacher.LastName }}</p>
@@ -27,7 +26,7 @@ defineProps({
     </div>
   </div>
   <div class="review-container">
-    <h3>Reviews:</h3>
+    <h3>Comments:</h3>
     <ul>
       <li v-for="(review, index) in reviews" :key="index">
         {{ review.name }} gave this {{ review.rating }} stars

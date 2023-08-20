@@ -37,13 +37,6 @@ TeacherService.getTeacherById(Number(props.id))
           :to="{ name: 'teacher-detail', params: { id } }"
           >Details</RouterLink
         >
-        <span class="text-gray-350">|</span>
-        <RouterLink
-          class="w-1/2 ml-3 text-green-500 py-2 rounded text-center"
-          :to="{ name: 'teacher', params: { id: teacher.id } }"
-        >
-          Advisor
-        </RouterLink>
       </div>
     </div>
     <RouterView class="mt-3" :teacher="teacher"></RouterView>
