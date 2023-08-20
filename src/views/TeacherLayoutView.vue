@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import type { Ref } from 'vue'
 import type { TeacherDetail } from '@/type'
 // import { ref, type PropType } from 'vue'
@@ -55,4 +55,4 @@ onMounted(async () => {
     </div>
     <RouterView class="mt-3" :advisor="advisor"></RouterView>
   </div>
-</template>
+</template> -->

@@ -4,7 +4,6 @@ import type { StudentDetail } from '@/type'
 import { ref, type PropType } from 'vue'
 import StudentService from '@/services/StudentService'
 
-
 defineProps({
   student: {
     type: Object as PropType<StudentDetail>,
@@ -12,11 +11,9 @@ defineProps({
   },
   reviews: {
     type: Array,
-    required: true,
+    required: true
   }
-
 })
-
 </script>
 
 <template>
@@ -29,18 +26,17 @@ defineProps({
     </div>
   </div>
   <div class="review-container">
-        <h3>Reviews:</h3>
-            <ul>
-                <li v-for="(review, index) in reviews" :key="index">
-                    {{ review.name}} gave this {{ review.rating}} stars
-                    <br/>
-                    "{{ review.review }}"
-                    <br/>
-                    Answer:
-                    <br/>
-                    "{{ review.rec }}"
-                </li>
-            </ul>
-    </div>
-    
+    <h3>Reviews:</h3>
+    <ul>
+      <li v-for="(review, index) in reviews" :key="index">
+        {{ review.name }} gave this {{ review.rating }} stars
+        <br />
+        "{{ review.review }}"
+        <br />
+        Answer:
+        <br />
+        "{{ review.rec }}"
+      </li>
+    </ul>
+  </div>
 </template>

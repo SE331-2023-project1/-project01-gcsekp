@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import TeacherCard from '../components/TeacherCard.vue'
 import AdvisorService from '@/services/AdvisorService'
 import type { TeacherDetail } from '@/type'
@@ -57,4 +57,4 @@ const displayedadvisors: ComputedRef<Array<TeacherDetail>> = computed(() => {
       </button>
     </div>
   </div>
-</template>
+</template> -->

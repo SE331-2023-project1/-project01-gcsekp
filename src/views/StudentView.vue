@@ -52,6 +52,5 @@ const displayedStudents = computed(() => {
         NextPage
       </button>
     </div>
-    
   </div>
 </template>

@@ -2,13 +2,13 @@ import { createRouter, createWebHistory } from 'vue-router'
 import StudentView from '../views/StudentView.vue'
 import StudentDetailView from '../views/StudentDetailView.vue'
 import StudentLayoutView from '../views/StudentLayoutView.vue'
-import TeacherView from '../views/TeacherView.vue'
+// import TeacherView from '../views/TeacherView.vue'
 import StudentAdvisorView from '../views/StudentAdvisorView.vue'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import NotFoundView from '@/views/NotFoundView.vue'
-import TeacherDetailView from '@/views/TeacherDetailView.vue'
-import TeacherLayoutView from '@/views/TeacherLayoutView.vue'
+// import TeacherDetailView from '@/views/TeacherDetailView.vue'
+// import TeacherLayoutView from '@/views/TeacherLayoutView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,11 +18,11 @@ const router = createRouter({
       name: 'students',
       component: StudentView
     },
-    {
-      path: '/teacher',
-      name: 'teacher',
-      component: TeacherView
-    },
+    // {
+    //   path: '/teacher',
+    //   name: 'teacher',
+    //   component: TeacherView
+    // },
     {
       path: '/404/:resource',
       name: '404-resource',
@@ -54,21 +54,21 @@ const router = createRouter({
           props: true
         }
       ]
-    },
-    {
-      path: '/teacher/:id',
-      name: 'advisor-detail',
-      component: TeacherLayoutView,
-      props: true,
-      children: [
-        {
-          path: '',
-          name: 'advisor-detail',
-          component: TeacherDetailView,
-          props: true
-        }
-      ]
     }
+    // {
+    //   path: '/teacher/:id',
+    //   name: 'teacher-detail',
+    //   component: TeacherLayoutView,
+    //   props: true,
+    //   children: [
+    //     {
+    //       path: '',
+    //       name: 'teacher-detail',
+    //       component: TeacherDetailView,
+    //       props: true
+    //     }
+    //   ]
+    // }
   ]
 })
 // Start the progress bar on navigation

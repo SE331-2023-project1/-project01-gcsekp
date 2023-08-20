@@ -1,21 +1,21 @@
-<template>
-  <!-- Wrap the card in a RouterLink to make it clickable -->
+<!-- <template>
+
   <RouterLink
     :to="{ name: 'student-advisor', params: { id: advisor.id } }"
     class="TeacherCard-container"
   >
-    <!-- Profile Picture Section -->
+
     <div class="TeacherCard-profile">
-      <!-- Apply circular border to the profile picture -->
+ 
       <img
         :src="advisor.Advisor_pic"
         alt="Teacher Profile"
         class="rounded-full h-16 w-16 border-2 border-blue-950"
       />
     </div>
-    <!-- Teacher Information Section -->
+
     <div class="TeacherCard-info ml-4">
-      <!-- Display the first name in bold -->
+
       <p class="text-blue-950 font-bold">Firstname:{{ advisor.FirstName }}</p>
       <p class="text-blue-950">Lastname:{{ advisor.LastName }}</p>
       <p class="text-gray-400">Department:{{ advisor.Department }}</p>
@@ -41,7 +41,7 @@ const props = defineProps({
 .TeacherCard-container {
   display: flex;
   align-items: center;
-  width: 100vh; /* Adjust the width as needed */
+  width: 100vh; 
   padding: 10px;
   margin: 10px;
   background-color: white;
@@ -68,7 +68,7 @@ const props = defineProps({
 .text-gray-400 {
   color: #718096;
 }
-/* Responsive adjustments */
+
 @media (min-width: 768px) {
   .TeacherCard-container {
     flex-direction: row;
@@ -86,4 +86,4 @@ const props = defineProps({
     flex: 1;
   }
 }
-</style>
+</style> -->

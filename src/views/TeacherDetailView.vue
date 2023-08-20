@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import type { Ref } from 'vue'
 import type { TeacherDetail } from '@/type'
 // import { ref, type PropType } from 'vue'
@@ -23,4 +23,4 @@ const props = defineProps({
       <p><span class="font-bold mb-10">Registered on :</span> {{ props.advisor.Email }}</p>
     </div>
   </div>
-</template>
+</template> -->
