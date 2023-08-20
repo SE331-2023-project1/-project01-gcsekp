@@ -40,9 +40,10 @@ StudentService.getStudentById(Number(props.id))
         <span class="text-gray-350">|</span>
         <RouterLink
           class="w-1/2 ml-3 text-green-500 py-2 rounded text-center"
-          :to="{ name: 'student-advisor', params: { id } }"
-          >Advisor</RouterLink
+          :to="{ name: 'student-advisor', params: { id: student.id } }"
         >
+          Advisor
+        </RouterLink>
       </div>
     </div>
     <RouterView class="mt-3" :student="student"></RouterView>
