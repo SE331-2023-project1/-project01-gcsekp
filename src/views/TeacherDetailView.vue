@@ -10,6 +10,7 @@ defineProps({
     require: true
   }
 })
+
 </script>
 
 <template>
