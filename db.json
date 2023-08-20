@@ -181,7 +181,7 @@
       "stu_pic": "https://randomuser.me/api/portraits/women/20.jpg"
     }
   ],
-  "advisor": [
+  "teacher": [
     {
       "id": 101,
       "FirstName": "Dr. Michael",

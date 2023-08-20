@@ -4,7 +4,7 @@
       <div class="wrapper">
         <nav class="font-mono text-yellow-300" id="menu">
           <RouterLink to="/">Student</RouterLink> |
-          <RouterLink to="/teacher">Advisor</RouterLink>
+          <RouterLink to="/teacher">Teacher</RouterLink>
         </nav>
       </div>
     </header>

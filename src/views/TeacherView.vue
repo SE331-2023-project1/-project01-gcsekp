@@ -1,24 +1,24 @@
-<!-- <script setup lang="ts">
+<script setup lang="ts">
 import TeacherCard from '../components/TeacherCard.vue'
-import AdvisorService from '@/services/AdvisorService'
+import TeacherService from '@/services/TeacherService'
 import type { TeacherDetail } from '@/type'
 import { ref, computed } from 'vue'
-import type { Ref, ComputedRef } from 'vue'
+import type { Ref } from 'vue'
 
-const advisors: Ref<Array<TeacherDetail>> = ref([])
+const teacher: Ref<Array<TeacherDetail>> = ref([])
 const itemsPerPage = 5
 const currentPage = ref(1)
 
-AdvisorService.getTeacher()
+TeacherService.getTeacher()
   .then((response) => {
-    advisors.value = response.data
+    teacher.value = response.data
   })
   .catch((error) => {
-    console.error('Error fetching advisors:', error)
+    console.error('Error fetching teacher:', error)
   })
 
 const nextPage = () => {
-  if (currentPage.value < Math.ceil(advisors.value.length / itemsPerPage)) {
+  if (currentPage.value < Math.ceil(teacher.value.length / itemsPerPage)) {
     currentPage.value++
   }
 }
@@ -29,32 +29,28 @@ const prevPage = () => {
   }
 }
 
-// const displayedadvisors = computed(() => {
-//   const startIndex = (currentPage.value - 1) * itemsPerPage
-//   const endIndex = startIndex + itemsPerPage
-//   return advisors.value.slice(startIndex, endIndex)
-const displayedadvisors: ComputedRef<Array<TeacherDetail>> = computed(() => {
+const displayedTeacher = computed(() => {
   const startIndex = (currentPage.value - 1) * itemsPerPage
   const endIndex = startIndex + itemsPerPage
-  return advisors.value.slice(startIndex, endIndex)
+  return teacher.value.slice(startIndex, endIndex)
 })
 </script>
 
 <template>
-  <div class="advisor">
+  <div class="teacher">
     <TeacherCard
-      v-for="advisor in displayedadvisors"
-      :key="advisor.id"
-      :advisor="advisor"
+      v-for="teacher in displayedTeacher"
+      :key="teacher.id"
+      :teacher="teacher"
     ></TeacherCard>
     <div class="pagination">
       <button @click="prevPage" :disabled="currentPage === 1">PrevPage</button>
       <button
         @click="nextPage"
-        :disabled="currentPage === Math.ceil(advisors.length / itemsPerPage)"
+        :disabled="currentPage === Math.ceil(teacher.length / itemsPerPage)"
       >
         NextPage
       </button>
     </div>
   </div>
-</template> -->
+</template>
