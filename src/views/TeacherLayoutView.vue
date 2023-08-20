@@ -5,14 +5,14 @@ import { ref, type PropType } from 'vue'
 import AdvisorService from '@/services/AdvisorService'
 import { useRouter } from 'vue-router'
 
-const student = ref<StudentDetail | null>(null)
+const advisor = ref<TeacherDetail | null>(null)
 const router = useRouter()
 
 const props = defineProps({
   id: String
 })
 
-AdvisorService.getAdvisorById(Number(props.id))
+AdvisorService.getTeacherById(Number(props.id))
   .then((response) => {
     advisor.value = response.data
   })
@@ -29,7 +29,7 @@ AdvisorService.getAdvisorById(Number(props.id))
 <template>
   <div>
     <div v-if="advisor">
-      <img class="mb-5" :src="advisor.advi_pic" alt="img" />
+      <img class="mb-5" :src="advisor.Advisor_pic" alt="img" />
       <hr class="mb-5" />
       <div id="nav">
         <RouterLink
