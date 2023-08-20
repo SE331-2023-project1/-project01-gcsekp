@@ -1,6 +1,6 @@
 import axios from 'axios'
 import type { AxiosInstance, AxiosResponse } from 'axios'
-import type { TeacherDetail } from '@/type'
+import type { TeacherDetail, Review } from '@/type'
 
 const apiClient: AxiosInstance = axios.create({
   baseURL: 'http://localhost:3004',
@@ -17,5 +17,8 @@ export default {
   },
   getTeacherById(id: number): Promise<AxiosResponse<TeacherDetail>> {
     return apiClient.get<TeacherDetail>('teacher/' + id.toString())
+  },
+  getTeacherReviews(id: number): Promise<AxiosResponse<Review[]>> {
+    return apiClient.get<Review[]>(`teacher/${id}/reviews`)
   }
 }

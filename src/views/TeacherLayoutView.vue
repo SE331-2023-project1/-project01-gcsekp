@@ -36,23 +36,20 @@ onMounted(async () => {
 
 <template>
   <div>
-    <h2>Teacher Detail</h2>
     <div v-if="teacher">
-      <!-- ... Your teacher details ... -->
+      <img class="mb-5" :src="teacher.Advisor_pic" alt="img" />
       <hr class="mb-5" />
       <div id="nav">
         <RouterLink
           class="w-1/2 mr-3 text-green-500 py-2 rounded text-center"
-          :to="{ name: 'teacher-detail', params: { id: teacher.id } }"
+          :to="{ name: 'teacher-detail', params: { id } }"
           >Details</RouterLink
         >
       </div>
-      <!-- Render TeacherDetailView with teacher and reviews props -->
       <TeacherDetailView :teacher="teacher" :reviews="reviews" />
     </div>
     <div class="mt-3">
-      <!-- Render child routes within the RouterView -->
-      <RouterView />
+      <RouterView :teacher="teacher" />
     </div>
   </div>
 </template>
