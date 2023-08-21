@@ -11,6 +11,7 @@ const currentPage = ref(1)
 
 StudentService.getStudent()
   .then((response) => {
+    console.log('Fetched student data:', response.data) // Add this line
     students.value = response.data
   })
   .catch((error) => {

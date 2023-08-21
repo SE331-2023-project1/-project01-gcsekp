@@ -45,6 +45,10 @@ onMounted(async () => {
           :to="{ name: 'teacher-detail', params: { id } }"
           >Details</RouterLink
         >
+        <p><span class="font-bold">First Name :</span> {{ teacher.FirstName }}</p>
+        <p><span class="font-bold">Last Name :</span> {{ teacher.LastName }}</p>
+        <p><span class="font-bold">Department :</span> {{ teacher.Department }}</p>
+        <p><span class="font-bold mb-10">Email :</span> {{ teacher.Email }}</p>
       </div>
       <TeacherDetailView :teacher="teacher" :reviews="reviews" />
     </div>

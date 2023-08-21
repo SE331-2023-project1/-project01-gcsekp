@@ -34,10 +34,11 @@ StudentService.getStudentById(Number(props.id))
       <div id="nav">
         <RouterLink
           class="w-1/2 mr-3 text-green-500 py-2 rounded text-center"
-          :to="{ name: 'student-detail', params: { id } }"
+          :to="{ name: 'student-detail', params: { id: student.id } }"
           >Details</RouterLink
         >
         <span class="text-gray-350">|</span>
+
         <RouterLink
           class="w-1/2 ml-3 text-green-500 py-2 rounded text-center"
           :to="{ name: 'student-advisor', params: { id: student.id } }"
@@ -49,3 +50,28 @@ StudentService.getStudentById(Number(props.id))
     <RouterView class="mt-3" :student="student"></RouterView>
   </div>
 </template>
+<!-- 
+<template>
+  <div>
+    <div>
+      <router-link :to="{ name: 'student-detail-view' }">Student Detail</router-link>
+      <router-link :to="{ name: 'teacher-detail-view' }">Teacher Detail</router-link>
+    </div>
+    <router-view></router-view>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { ref, defineProps } from 'vue'
+
+const { student, reviews } = defineProps({
+  student: {
+    type: Object,
+    required: true
+  },
+  reviews: {
+    type: Array,
+    required: true
+  }
+})
+</script> -->

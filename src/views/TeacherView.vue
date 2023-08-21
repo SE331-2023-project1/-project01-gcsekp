@@ -11,6 +11,7 @@ const currentPage = ref(1)
 
 TeacherService.getTeacher()
   .then((response) => {
+    console.log('Fetched teacher data:', response.data) // Add this line
     teacher.value = response.data
   })
   .catch((error) => {

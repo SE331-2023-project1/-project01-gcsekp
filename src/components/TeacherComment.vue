@@ -6,15 +6,13 @@
 
     <h3>Comments:</h3>
     <ul>
-      <li v-for="(comment, index) in comments" :key="index">
-        {{ comment }}
-      </li>
+      <li v-for="(comment, index) in comments" :key="index">{{ comment }}</li>
     </ul>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, type PropType } from 'vue'
 
 // Props
 const props = defineProps({
