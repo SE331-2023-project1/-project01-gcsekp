@@ -50,28 +50,3 @@ StudentService.getStudentById(Number(props.id))
     <RouterView class="mt-3" :student="student"></RouterView>
   </div>
 </template>
-<!-- 
-<template>
-  <div>
-    <div>
-      <router-link :to="{ name: 'student-detail-view' }">Student Detail</router-link>
-      <router-link :to="{ name: 'teacher-detail-view' }">Teacher Detail</router-link>
-    </div>
-    <router-view></router-view>
-  </div>
-</template>
-
-<script setup lang="ts">
-import { ref, defineProps } from 'vue'
-
-const { student, reviews } = defineProps({
-  student: {
-    type: Object,
-    required: true
-  },
-  reviews: {
-    type: Array,
-    required: true
-  }
-})
-</script> -->

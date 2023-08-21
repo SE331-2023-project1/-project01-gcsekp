@@ -15,7 +15,7 @@ defineProps({
 </script>
 
 <template>
-  <p>Advisor Detail Information here</p>
+  <p>Teacher Detail Information here</p>
   <div>
     <div v-if="advisor">
       <p><span class="font-bold">First Name :</span> {{ advisor.FirstName }}</p>
