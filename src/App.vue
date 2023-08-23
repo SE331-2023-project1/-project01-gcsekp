@@ -1,6 +1,6 @@
 <template>
   <div class="main-container">
-    <header>
+    <header class="fixed-header">
       <div class="wrapper">
         <nav class="font-mono text-yellow-300" id="menu">
           <RouterLink to="/">Student</RouterLink> |
