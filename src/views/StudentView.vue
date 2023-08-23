@@ -65,6 +65,7 @@ const displayedStudents = computed(() => {
   display: flex;
   gap: 20px;
   margin-top: 10px;
+  margin: 10px;
 }
 
 .pagination-left {

@@ -17,8 +17,10 @@
 
 <style scoped>
 .main-container {
-  position: relative;
-  background: blue;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 100vh; /* Full width */
 }
 
 header {
@@ -50,11 +52,8 @@ nav a:hover {
 }
 
 @media (min-width: 1246px) {
-  header {
+  .fixed-header {
     padding: 10px 20px;
-  }
-
-  .wrapper {
     justify-content: flex-start;
   }
 
