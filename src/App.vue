@@ -18,6 +18,7 @@
 <style scoped>
 .main-container {
   position: relative;
+  background: blue;
 }
 
 header {
@@ -33,7 +34,7 @@ header {
 }
 
 nav {
-  font-size: 12px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -65,5 +66,6 @@ nav a:hover {
 #menu {
   display: flex;
   align-items: center;
+  font: bold;
 }
 </style>
