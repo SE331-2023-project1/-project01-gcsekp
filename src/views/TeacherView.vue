@@ -45,13 +45,32 @@ const displayedTeacher = computed(() => {
       :teacher="teacher"
     ></TeacherCard>
     <div class="pagination">
-      <button @click="prevPage" :disabled="currentPage === 1">PrevPage</button>
-      <button
-        @click="nextPage"
-        :disabled="currentPage === Math.ceil(teacher.length / itemsPerPage)"
-      >
-        NextPage
-      </button>
+      <div class="pagination-left">
+        <button @click="prevPage" :disabled="currentPage === 1">PrevPage</button>
+      </div>
+      <div class="pagination-right">
+        <button
+          @click="nextPage"
+          :disabled="currentPage === Math.ceil(teacher.length / itemsPerPage)"
+        >
+          NextPage
+        </button>
+      </div>
     </div>
   </div>
 </template>
+<style scoped>
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.pagination-left {
+  order: 1;
+}
+
+.pagination-right {
+  order: 2;
+}
+</style>
