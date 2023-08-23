@@ -40,9 +40,7 @@ onMounted(async () => {
       <img class="mb-5" :src="teacher.Advisor_pic" alt="img" />
       <hr class="mb-5" />
       <div id="nav">
-        <RouterLink
-          class="w-1/2 mr-3 text-green-500 py-2 rounded text-center"
-          :to="{ name: 'teacher-detail', params: { id } }"
+        <RouterLink class="details" :to="{ name: 'teacher-detail', params: { id } }"
           >Details</RouterLink
         >
         <p><span class="font-bold">First Name :</span> {{ teacher.FirstName }}</p>
@@ -57,3 +55,19 @@ onMounted(async () => {
     </div>
   </div>
 </template>
+<style scoped>
+img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 0.5px solid none;
+  margin-bottom: 10px;
+}
+.details {
+  color: white;
+  font-size: large;
+}
+#nav {
+  margin-top: 20px;
+}
+</style>

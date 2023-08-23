@@ -31,16 +31,15 @@ StudentService.getStudentById(Number(props.id))
     <div v-if="student">
       <img class="mb-5" :src="student.stu_pic" alt="img" />
       <hr class="mb-5" />
-      <div id="nav">
+      <div id="nav" class="button-container">
         <RouterLink
-          class="w-1/2 mr-3 text-green-500 py-2 rounded text-center"
+          class="button details-button"
           :to="{ name: 'student-detail', params: { id: student.id } }"
           >Details</RouterLink
         >
-        <span class="text-gray-350">|</span>
 
         <RouterLink
-          class="w-1/2 ml-3 text-green-500 py-2 rounded text-center"
+          class="button details-button"
           :to="{ name: 'student-advisor', params: { id: student.id } }"
         >
           Advisor
@@ -50,3 +49,39 @@ StudentService.getStudentById(Number(props.id))
     <RouterView class="mt-3" :student="student"></RouterView>
   </div>
 </template>
+<style scoped>
+img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 0.5px solid none;
+  margin-bottom: 10px;
+}
+.details {
+  color: white;
+  font-size: large;
+}
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.details-button {
+  padding: 5px 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+.details-button:hover {
+  background-color: #2779bd;
+  transform: scale(1.05);
+}
+</style>

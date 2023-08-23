@@ -3,8 +3,8 @@
     <header class="fixed-header">
       <div class="wrapper">
         <nav class="font-mono text-yellow-300" id="menu">
-          <RouterLink to="/">Student</RouterLink> |
-          <RouterLink to="/teacher">Teacher</RouterLink>
+          <RouterLink to="/" active-class="active" class="nav-link">Student</RouterLink> |
+          <RouterLink to="/teacher" active-class="active" class="nav-link">Teacher</RouterLink>
         </nav>
       </div>
     </header>
@@ -66,5 +66,21 @@ nav a:hover {
   display: flex;
   align-items: center;
   font: bold;
+}
+.nav-link {
+  display: inline-block;
+  padding: 0 1rem;
+  text-decoration: none;
+  color: var(--color-text);
+  transition:
+    color 0.2s,
+    text-decoration 0.2s,
+    transform 0.2s;
+}
+
+/* Apply styles to the active link */
+.active {
+  text-decoration: underline;
+  font-weight: bold;
 }
 </style>
