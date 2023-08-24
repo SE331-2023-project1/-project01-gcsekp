@@ -7,7 +7,6 @@ import { RouterLink, RouterView } from 'vue-router'
 // import { useRouter } from 'vue-router'
 
 const teacher = ref<TeacherDetail | null>(null)
-const reviews = ref<Review[]>([]) // Initialize the reviews array
 
 const props = defineProps({
   id: String
@@ -20,12 +19,6 @@ onMounted(async () => {
     const teacherResponse = await TeacherService.getTeacherById(Number(props.id))
     teacher.value = teacherResponse.data
     console.log('Teacher details:', teacherResponse.data)
-
-    console.log('Fetching teacher reviews...')
-    // Fetch teacher reviews
-    const reviewsResponse = await TeacherService.getTeacherReviews(Number(props.id))
-    reviews.value = reviewsResponse.data
-    console.log('Teacher reviews:', reviewsResponse.data)
   } catch (error) {
     console.error(error)
     // Handle error here
@@ -54,7 +47,6 @@ onMounted(async () => {
         <p><span class="font-bold">Department :</span> {{ teacher.Department }}</p>
         <p><span class="font-bold">Email :</span> {{ teacher.Email }}</p>
       </div>
-      <TeacherDetailView :teacher="teacher" :reviews="reviews" />
     </div>
     <div class="mt-3">
       <RouterView :teacher="teacher" />
