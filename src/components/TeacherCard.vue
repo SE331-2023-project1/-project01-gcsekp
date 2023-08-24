@@ -42,7 +42,7 @@ const props = defineProps({
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100vh; /* Full width */
+  width: 100vh;
   padding: 10px;
   margin: 10px;
   border: 2px solid;

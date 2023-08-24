@@ -1,10 +1,15 @@
 <template>
-  <div class="main-container">
-    <header class="fixed-header">
-      <div class="wrapper">
-        <nav class="font-mono text-yellow-300" id="menu">
-          <RouterLink to="/" active-class="active" class="nav-link">Student</RouterLink> |
-          <RouterLink to="/teacher" active-class="active" class="nav-link">Teacher</RouterLink>
+  <div class="main-container flex flex-col w-full bg-none">
+    <header class="fixed-header z-10 p-5 m-5 py-2 bg-none">
+      <div class="wrapper flex flex-col items-center justify-center">
+        <nav class="font-mono text-lg text-center" id="menu">
+          <RouterLink class="nav-link details-button" to="/" active-class="active"
+            >Student</RouterLink
+          >
+          <span class="mx-2 text-gray-400"></span>
+          <RouterLink class="nav-link details-button" to="/teacher" active-class="active"
+            >Teacher</RouterLink
+          >
         </nav>
       </div>
     </header>
@@ -16,71 +21,24 @@
 </template>
 
 <style scoped>
-.main-container {
-  background: transparent;
-  display: flex;
-  flex-direction: column;
-  width: 100vh; /* Full width */
-}
-
-header {
-  z-index: 100;
-  padding: 10px 0;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-nav {
-  font-size: 20px;
-  text-align: center;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  text-decoration: none;
-  color: var(--color-text);
-}
-
-nav a:hover {
-  background-color: transparent;
-}
-
 @media (min-width: 1246px) {
   .fixed-header {
-    padding: 10px 20px;
-    justify-content: flex-start;
+    @apply py-2 px-4 justify-between;
   }
 
   nav {
-    font-size: 1rem;
-    text-align: left;
+    @apply text-base text-left;
   }
 }
 #menu {
-  display: flex;
-  align-items: center;
-  font: bold;
+  @apply flex items-center font-semibold py-2 px-4 text-lg bg-none rounded-md text-black hover:text-black transform hover:scale-105;
 }
 .nav-link {
-  display: inline-block;
-  padding: 0 1rem;
-  text-decoration: none;
-  color: var(--color-text);
-  transition:
-    color 0.2s,
-    text-decoration 0.2s,
-    transform 0.2s;
+  @apply inline-block px-4 py-2 text-blue-700 no-underline transition duration-200 hover:text-yellow-500;
 }
 
 /* Apply styles to the active link */
 .active {
-  text-decoration: underline;
-  font-weight: bold;
+  @apply font-bold underline  hover:bg-none hover:text-black transform hover:scale-105;
 }
 </style>

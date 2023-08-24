@@ -35,18 +35,24 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div>
-    <div v-if="teacher">
-      <img class="mb-5" :src="teacher.Advisor_pic" alt="img" />
+  <div class="flex flex-col items-center">
+    <div v-if="teacher" class="mt-5">
+      <img
+        class="mb-5 rounded-full w-32 h-32 border-2 border-none"
+        :src="teacher.Advisor_pic"
+        alt="img"
+      />
       <hr class="mb-5" />
-      <div id="nav">
-        <RouterLink class="details" :to="{ name: 'teacher-detail', params: { id } }"
+      <div class="details mt-5;">
+        <RouterLink
+          :to="{ name: 'teacher-detail', params: { id } }"
+          class="text-xl font-bold text-black"
           >Details</RouterLink
         >
         <p><span class="font-bold">First Name :</span> {{ teacher.FirstName }}</p>
         <p><span class="font-bold">Last Name :</span> {{ teacher.LastName }}</p>
         <p><span class="font-bold">Department :</span> {{ teacher.Department }}</p>
-        <p><span class="font-bold mb-10">Email :</span> {{ teacher.Email }}</p>
+        <p><span class="font-bold">Email :</span> {{ teacher.Email }}</p>
       </div>
       <TeacherDetailView :teacher="teacher" :reviews="reviews" />
     </div>
@@ -56,18 +62,7 @@ onMounted(async () => {
   </div>
 </template>
 <style scoped>
-img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  border: 0.5px solid none;
-  margin-bottom: 10px;
-}
-.details {
-  color: white;
-  font-size: large;
-}
-#nav {
-  margin-top: 20px;
+.details p {
+  @apply mb-2;
 }
 </style>

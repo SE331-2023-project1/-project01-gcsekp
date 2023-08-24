@@ -11,7 +11,7 @@ const currentPage = ref(1)
 
 TeacherService.getTeacher()
   .then((response) => {
-    console.log('Fetched teacher data:', response.data) // Add this line
+    console.log('Fetched teacher data:', response.data)
     teacher.value = response.data
   })
   .catch((error) => {
@@ -38,19 +38,21 @@ const displayedTeacher = computed(() => {
 </script>
 
 <template>
-  <div class="teacher">
+  <div class="teacher relative bg-transparent">
     <TeacherCard
       v-for="teacher in displayedTeacher"
       :key="teacher.id"
       :teacher="teacher"
     ></TeacherCard>
-    <div class="pagination">
-      <button @click="prevPage" :disabled="currentPage === 1" class="button">PrevPage</button>
+    <div class="pagination flex items-center gap-5 mt-5 bg-transparent flex-row">
+      <button @click="prevPage" :disabled="currentPage === 1" class="button disabled:opacity-50">
+        PrevPage
+      </button>
 
       <button
         @click="nextPage"
         :disabled="currentPage === Math.ceil(teacher.length / itemsPerPage)"
-        class="button"
+        class="button disabled:opacity-50"
       >
         NextPage
       </button>
@@ -58,31 +60,14 @@ const displayedTeacher = computed(() => {
   </div>
 </template>
 <style scoped>
-.teacher {
-  position: relative;
-  background: transparent;
-}
 .pagination {
-  background: transparent;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  /* padding: 10px; */
-  margin: 10px;
+  @apply bg-transparent flex flex-row items-center gap-5 mt-5;
 }
 
 .button {
-  padding: 10px 20px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f7f7f7;
-  color: #333;
-  cursor: pointer;
+  @apply px-5 py-2 text-sm border rounded bg-gray-100 text-gray-600 cursor-pointer;
 }
-
 .button:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
+  @apply opacity-50 cursor-not-allowed;
 }
 </style>
