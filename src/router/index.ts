@@ -3,7 +3,7 @@ import StudentView from '../views/StudentView.vue'
 import StudentDetailView from '../views/StudentDetailView.vue'
 import StudentLayoutView from '../views/StudentLayoutView.vue'
 import TeacherView from '../views/TeacherView.vue'
-import StudentAdvisorView from '../views/StudentTeacherView.vue'
+import StudentTeacherView from '../views/StudentTeacherView.vue'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import NotFoundView from '@/views/NotFoundView.vue'
@@ -50,7 +50,7 @@ const router = createRouter({
         {
           path: 'teacher',
           name: 'student-teacher',
-          component: StudentAdvisorView,
+          component: StudentTeacherView,
           props: true
         }
       ]

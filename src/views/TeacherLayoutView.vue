@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TeacherDetail, Review } from '@/type'
+import type { TeacherDetail } from '@/type'
 import { ref, defineProps, onMounted } from 'vue'
 import TeacherService from '@/services/TeacherService'
 import { RouterLink, RouterView } from 'vue-router'
