@@ -2,7 +2,7 @@
   <!-- Wrap the card in a RouterLink to make it clickable -->
   <RouterLink
     :to="{ name: 'student-detail', params: { id: student.id } }"
-    class="StudentCard-container flex items-center flex-col w-screen p-10 m-10 bg-white rounded-md shadow-md border-2"
+    class="StudentCard-container flex items-center flex-col w-screen p-10 m-10 border-2 rounded-md"
   >
     <!-- Profile Picture Section -->
     <div class="StudentCard-profile">
@@ -44,16 +44,14 @@ const props = defineProps({
   width: 100vh; /* Full width */
   padding: 10px;
   margin: 10px;
-  background-color: white;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border: 2px solid;
 }
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
   .StudentCard-container {
-    @apply flex items-center flex-row justify-between max-w-none p-4 m-4 bg-white rounded-md shadow-md border-2;
+    @apply flex items-center flex-row justify-between max-w-none p-4 m-4 rounded-md shadow-md border-2;
   }
 
   .StudentCard-profile {

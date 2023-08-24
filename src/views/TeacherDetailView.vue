@@ -2,7 +2,7 @@
 import type { Ref } from 'vue'
 import type { TeacherDetail } from '@/type'
 // import { ref, type PropType } from 'vue'
-import { ref, defineProps } from 'vue'
+import { ref } from 'vue'
 import TeacherService from '@/services/TeacherService'
 
 const { teacher } = defineProps({

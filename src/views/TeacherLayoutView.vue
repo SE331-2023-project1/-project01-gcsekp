@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { TeacherDetail } from '@/type'
-import { ref, defineProps, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import TeacherService from '@/services/TeacherService'
 import { RouterLink, RouterView } from 'vue-router'
 
@@ -37,9 +37,7 @@ onMounted(async () => {
       />
       <hr class="mb-5" />
       <div class="details mt-5;">
-        <RouterLink
-          :to="{ name: 'teacher-detail', params: { id } }"
-          class="text-xl font-bold text-black"
+        <RouterLink :to="{ name: 'teacher-detail', params: { id } }" class="text-xl font-bold"
           >Details</RouterLink
         >
         <p><span class="font-bold">First Name :</span> {{ teacher.FirstName }}</p>
