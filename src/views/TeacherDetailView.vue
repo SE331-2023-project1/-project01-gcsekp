@@ -4,7 +4,6 @@ import type { TeacherDetail, Review } from '@/type'
 // import { ref, type PropType } from 'vue'
 import { ref, defineProps } from 'vue'
 import TeacherService from '@/services/TeacherService'
-import TeacherComment from '@/components/TeacherComment.vue'
 
 const { teacher, reviews } = defineProps({
   teacher: {

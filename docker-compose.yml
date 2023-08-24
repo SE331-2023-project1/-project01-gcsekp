@@ -1,0 +1,6 @@
+version: '3.9'
+services:
+web:
+  image: 'saw96/project1:latest'
+  ports:
+    - 8001:80
