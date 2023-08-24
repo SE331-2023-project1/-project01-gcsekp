@@ -31,7 +31,7 @@
   }
 }
 #menu {
-  @apply flex items-center font-semibold py-2 px-4 text-lg bg-none rounded-md text-black hover:text-black transform hover:scale-105;
+  @apply flex items-center font-semibold py-2 px-4 text-lg bg-none rounded-md text-white hover:text-white transform hover:scale-105;
 }
 .nav-link {
   @apply inline-block px-4 py-2 text-blue-700 no-underline transition duration-200 hover:text-yellow-500;
@@ -39,6 +39,6 @@
 
 /* Apply styles to the active link */
 .active {
-  @apply font-bold underline  hover:bg-none hover:text-black transform hover:scale-105;
+  @apply font-bold underline  hover:bg-none hover:text-white transform hover:scale-105;
 }
 </style>

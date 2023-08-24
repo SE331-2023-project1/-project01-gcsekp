@@ -9,7 +9,10 @@ const student = ref<StudentDetail | null>(null)
 const router = useRouter()
 
 const props = defineProps({
-  id: String
+  id: {
+    type: String as PropType<string>,
+    required: true
+  }
 })
 
 StudentService.getStudentById(Number(props.id))
