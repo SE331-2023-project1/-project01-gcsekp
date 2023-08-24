@@ -2,7 +2,7 @@
   <!-- Wrap the card in a RouterLink to make it clickable -->
   <RouterLink
     :to="{ name: 'teacher-detail', params: { id: teacher.id } }"
-    class="TeacherCard-container"
+    class="TeacherCard-container w-full border-2 border-blue-950 rounded-lg shadow-lg m-5 bg-white hover:bg-blue-50 cursor-pointer flex items-center px-6 py-4"
   >
     <!-- Profile Picture Section -->
     <div class="TeacherCard-profile">
@@ -45,7 +45,7 @@ const props = defineProps({
   width: 100vh; /* Full width */
   padding: 10px;
   margin: 10px;
-  background-color: white;
+  background-color: green;
   border-radius: 5px;
 }
 
