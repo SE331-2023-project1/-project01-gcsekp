@@ -2,7 +2,7 @@
   <!-- Wrap the card in a RouterLink to make it clickable -->
   <RouterLink
     :to="{ name: 'student-detail', params: { id: student.id } }"
-    class="StudentCard-container w-full border-2 border-blue-950 rounded-lg shadow-lg m-5 bg-white hover:bg-blue-50 cursor-pointer flex items-center px-6 py-4"
+    class="StudentCard-container flex items-center flex-col w-screen p-10 m-10 bg-white rounded-md shadow-md border-2"
   >
     <!-- Profile Picture Section -->
     <div class="StudentCard-profile">
@@ -10,15 +10,15 @@
       <img
         :src="student.stu_pic"
         alt="Student Profile"
-        class="rounded-full h-16 w-16 border-2 border-blue-950"
+        class="rounded-full w-16 h-16 border-2 border-none"
       />
     </div>
     <!-- Student Information Section -->
     <div class="StudentCard-info ml-4">
       <!-- Display the first name in bold -->
-      <p class="text-blue-950 font-bold">Firstname:{{ student.FirstName }}</p>
-      <p class="text-blue-950">Lastname:{{ student.LastName }}</p>
-      <p class="text-gray-400">Student_ID{{ student.Student_ID }}</p>
+      <p class="text-black-950 font-bold">Firstname:{{ student.FirstName }}</p>
+      <p class="text-black-950 font-bold">Lastname:{{ student.LastName }}</p>
+      <p class="text-black-950 font-bold">Student_ID{{ student.Student_ID }}</p>
     </div>
   </RouterLink>
 </template>
@@ -47,45 +47,21 @@ const props = defineProps({
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.StudentCard-profile {
-  flex: none;
-  margin-bottom: 20px;
-}
-
-.StudentCard-profile img {
-  border-radius: 50%;
-  width: 64px;
-  height: 64px;
-  border: 0.5px solid none;
-}
-
-.text-blue-950 {
-  color: #3490dc;
-}
-
-.text-gray-400 {
-  color: #718096;
+  border: 2px solid;
 }
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
   .StudentCard-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: none;
+    @apply flex items-center flex-row justify-between max-w-none p-4 m-4 bg-white rounded-md shadow-md border-2;
   }
 
   .StudentCard-profile {
-    margin-bottom: 0;
+    @apply flex-none mb-0;
   }
 
   .StudentCard-info {
-    text-align: left;
-    flex: 1;
-    margin-left: 20px;
+    @apply text-left flex-1 ml-4;
   }
 }
 </style>

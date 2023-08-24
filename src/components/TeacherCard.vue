@@ -2,7 +2,7 @@
   <!-- Wrap the card in a RouterLink to make it clickable -->
   <RouterLink
     :to="{ name: 'teacher-detail', params: { id: teacher.id } }"
-    class="TeacherCard-container w-full border-2 border-blue-950 rounded-lg shadow-lg m-5 bg-white hover:bg-blue-50 cursor-pointer flex items-center px-6 py-4"
+    class="TeacherCard-container flex items-center flex-col w-screen p-10 m-10 border-2 rounded-md"
   >
     <!-- Profile Picture Section -->
     <div class="TeacherCard-profile">
@@ -16,10 +16,10 @@
     <!-- Teacher Information Section -->
     <div class="TeacherCard-info ml-4">
       <!-- Display the first name in bold -->
-      <p class="text-blue-950 font-bold">Firstname:{{ teacher.FirstName }}</p>
-      <p class="text-blue-950">Lastname:{{ teacher.LastName }}</p>
-      <p class="text-gray-400">Department: {{ teacher.Department }}</p>
-      <p class="text-gray-400">Email:{{ teacher.Email }}</p>
+      <p class="text-black-950 font-bold">Firstname:{{ teacher.FirstName }}</p>
+      <p class="text-black-950">Lastname:{{ teacher.LastName }}</p>
+      <p class="text-black-400">Department: {{ teacher.Department }}</p>
+      <p class="text-black-400">Email:{{ teacher.Email }}</p>
     </div>
   </RouterLink>
 </template>
@@ -45,47 +45,25 @@ const props = defineProps({
   width: 100vh; /* Full width */
   padding: 10px;
   margin: 10px;
-  background-color: green;
+  border: 2px solid;
   border-radius: 5px;
-}
-
-.TeacherCard-profile {
-  flex: none;
-  margin-bottom: 20px;
-}
-
-.TeacherCard-profile img {
-  border-radius: 50%;
-  width: 64px;
-  height: 64px;
-  border: 0.5px solid none;
-}
-
-.text-blue-950 {
-  color: #3490dc;
-}
-
-.text-gray-400 {
-  color: #718096;
 }
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
   .TeacherCard-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: none;
+    @apply flex items-center flex-row justify-between max-w-none p-4 m-4 border-2 rounded-md;
   }
 
   .TeacherCard-profile {
-    margin-bottom: 0;
+    @apply flex-none mb-0;
+  }
+  .TeacherCard-profile img {
+    @apply rounded-full h-16 w-16 border-2 border-none;
   }
 
   .TeacherCard-info {
-    text-align: left;
-    flex: 1;
-    margin-left: 20px;
+    @apply text-left flex-1 ml-4;
   }
 }
 </style>
